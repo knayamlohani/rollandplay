@@ -1,7 +1,9 @@
 # roll and play dice game
 
 
-#https://roll-and-play.herokuapp.com/
+# https://roll-and-play.herokuapp.com/
+the server shutdown every half hour so on opening first time might take some time
+
 
 to setup 
 
@@ -11,5 +13,5 @@ to setup
 
 To run unit test <br/>
 
-1 - npm start<br/>
+1 - npm test<br/>
  
