@@ -2,12 +2,10 @@ import {combineReducers} from "redux";
 
 
 // reducer imports
-import tvseriesReducer from './redux.reducer.tvseries'
-import appReducer from "./redux.reducer.app";
+import gameReducer from './redux.reducer.game'
 
 const rootReducer = combineReducers({
-    tvSeries: tvseriesReducer,
-    app: appReducer
+  game: gameReducer,
 });
 
 

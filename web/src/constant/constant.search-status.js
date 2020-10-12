@@ -1,5 +1,0 @@
-export const SEARCHING = "SEARCHING";
-export const SEARCH_SUCCESS = "SEARCH_SUCCESS";
-export const SEARCH_FAILURE = "SEARCH_FAILURE"
-export const UNKNOWN = "UNKNOWN"
-

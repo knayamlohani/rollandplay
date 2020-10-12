@@ -1,37 +1,27 @@
-import React from 'react';
-import * as headerCSS from './component.header.less'
+import React, {Component} from 'react'
+
+import {faDiceD6} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import './component.header.less'
 import {Link} from "react-router-dom";
 
-import {useLocation} from 'react-router'
-
-const Header = ({currentSeries}) => {
-
-    const {pathname} = useLocation();
-    return (
-        <nav className="header">
-            <div>
-                <a href="/">TV Series</a>
-                {currentSeries?.seriesName &&
-                <React.Fragment>
-                    <span className={"separator"}><i className="fa fa-caret-right" aria-hidden="true"/></span>
-                    <span> {currentSeries?.seriesName}</span>
-                </React.Fragment>
-                }
-            </div>
-
-            {
-                pathname?.startsWith("/series") &&
-                <div>
-                    <Link to={"/search?activate=true"}>
-                    <span className={"search-icon"}>
-                        <i className={"fa fa-search"} aria-hidden="true"/>
-                    </span>
-                    </Link>
-                </div>}
-
-        </nav>
-    );
-};
+export default class Header extends Component {
+	constructor(props) {
+		super(props);
+	}
 
 
-export default Header;
+	render() {
+		return (
+			<div className={'header'}>
+				<Link to={"/"}>
+					<div className={'app-icon'}>
+						<FontAwesomeIcon icon={faDiceD6}/>
+					</div>
+					<div className={'app-name'}>Roll & Play</div>
+				</Link>
+			</div>
+		);
+	}
+}

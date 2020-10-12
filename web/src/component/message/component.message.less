@@ -1,0 +1,34 @@
+.message {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: rgba(0,0,0,.2);
+
+  &.danger {
+    background-color: indianred;
+  }
+
+  &.success {
+    background-color: lightgreen;
+  }
+
+  &.animate {
+    animation-name: messageAnimation;
+    animation-duration: 5s;
+  }
+}
+
+
+
+@keyframes messageAnimation {
+  0% {
+    visibility: visible;
+  }
+
+
+  100% {
+    visibility: hidden;
+  }
+}

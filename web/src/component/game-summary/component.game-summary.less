@@ -1,0 +1,81 @@
+
+
+
+
+.game-summary {
+  position: absolute;
+  right: .6rem;
+  top: 4rem;
+
+  height: 95%;
+  overflow: scroll;
+
+  .player-summaries {
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .player-summaries {
+    &.view {
+      display: block;
+    }
+  }
+
+
+  .player-summary {
+    //margin: 1rem;
+    margin-bottom: .2rem;
+
+
+    .player-info {
+      border: 0.1rem solid rgba(255, 255, 255, 0.2);
+      border-top: none;
+      width: 15rem;
+
+      .rank-and-points {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: .8rem;
+        padding-left: .5rem;
+
+        .rank, .points {
+          padding: .5rem;
+        }
+      }
+
+      .player-name {
+        font-size: 1rem;
+        padding: 0.25rem 1rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 0.1rem solid rgba(255, 255, 255, 0.2);
+        border-left: none;
+        border-right: none;
+      }
+    }
+
+    &.active {
+      .player-name {
+        background-color: #00968873
+      }
+    }
+  }
+
+  .show-ranks {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: right;
+  }
+}
+
+
+
+@media all and (max-width: 1100px) {
+
+  .game-summary {
+    .player-summaries {
+      display: none;
+      background-color: black;
+    }
+  }
+}

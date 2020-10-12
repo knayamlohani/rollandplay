@@ -1,0 +1,67 @@
+
+.configure-component {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+
+.input-group {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+  font-size: 2rem;
+
+  div {
+    display: flex;
+  }
+
+
+  .input-label {
+    padding: 1rem 2rem;
+  }
+
+  .input {
+    background-color: transparent;
+    border: none;
+    padding: 0.25rem;
+    text-align: center;
+    border-bottom: 0.1rem solid white;
+    border-radius: 0;
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+
+  }
+
+  &.submit {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+
+    .action-icon {
+      color: white;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+
+
+      &:disabled {
+        .action-icon {
+          color: rgba(255,255,255,.25);
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  //.action-icon {
+  //  color: white;
+  //  font-size: 3rem;
+  //}
+}
+

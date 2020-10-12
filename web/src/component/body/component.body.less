@@ -1,0 +1,82 @@
+.players {
+  //display: flex;
+  //flex-flow: row wrap;
+}
+
+
+.game-page {
+  //display: flex;
+  //flex-flow: row wrap;
+  //justify-content: space-between;
+}
+
+
+.active-player-container {
+  //width: 80rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+
+  .active-player {
+    text-align: center;
+    cursor: pointer;
+
+    border: .1rem solid rgba(255,255,255,.25);
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+
+    .active-player-name {
+      font-size: 5rem;
+    }
+
+    .active-player-message {
+      font-size: 2rem;
+    }
+
+    .active-player-info {
+      display: flex;
+      justify-content: center;
+
+      .active-player-points, .active-player-rank {
+        margin: 1rem;
+        padding: .5rem;
+      }
+    }
+  }
+}
+
+.last-player-container {
+
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0,0,0,.25);
+
+  .last-player {
+    text-align: center;
+    cursor: pointer;
+
+    //
+    //border: .1rem solid rgba(255,255,255,.5);
+    //padding: 1rem 5rem;
+    //border-radius: 1rem;
+
+    .last-player-name {
+      font-size: 1.5rem;
+    }
+
+    .last-player-message {
+      font-size: 1.5rem;
+    }
+
+    .last-player-info {
+      display: flex;
+      justify-content: center;
+
+      .last-player-points, .last-player-rank {
+        margin: 1rem;
+        padding: .5rem;
+      }
+    }
+  }
+}

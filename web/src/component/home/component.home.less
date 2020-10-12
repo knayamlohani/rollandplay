@@ -1,0 +1,67 @@
+.dice-container {
+
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+
+  .dice {
+    padding: 2rem;
+
+    &.wobble {
+      animation-name: wobble;
+      animation-duration: 5s;
+    }
+  }
+
+}
+
+
+.action {
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem;
+  cursor: pointer;
+
+  a {
+    color: white;
+  }
+
+  .action-icon {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-45%, 0, 0)
+    rotate3d(0, 0, 1, -45deg);
+  }
+  30% {
+    transform: translate3d(40%, 0, 0)
+    rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-35%, 0, 0)
+    rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(40%, 0, 0)
+    rotate3d(0, 0, 1, 20deg);
+  }
+  75% {
+    transform: translate3d(-15%, 0, 0)
+    rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,18 +1,36 @@
 import React, {Component} from 'react'
-import HeaderComponent from "../header/component.header";
-import BodyComponent from "../component.body";
 
-export default class HomeComponent extends Component {
-    constructor(props) {
-        super(props);
-        this.props = props;
-    }
+import './component.home.less'
+import {faDiceOne, faDiceFive, faArrowCircleRight} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
-    render() {
-        return (
-            <React.Fragment>
-                <BodyComponent {...this.props}/>
-            </React.Fragment>
-        )
-    }
+export default class Home extends Component {
+
+	constructor(props) {
+		super(props);
+	}
+
+
+	render() {
+		return (
+			<div>
+				<div className={'dice-container'}>
+					<div className={'dice wobble'}>
+						<FontAwesomeIcon icon={faDiceOne}/>
+					</div>
+					<div className={'dice wobble'}>
+						<FontAwesomeIcon icon={faDiceFive}/>
+					</div>
+				</div>
+				<div className={'action'}>
+					<Link to={'/configure'}>
+						<div>Continue to play</div>
+						<div className={'action-icon'}><FontAwesomeIcon icon={faArrowCircleRight}/></div>
+					</Link>
+				</div>
+			</div>
+		);
+	}
+
 }
