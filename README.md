@@ -11,6 +11,7 @@ to setup
 2 - git checkout master<br/>
 3 - npm install<br/>
 4 - npm start<br/>
+5 - open url -  http://localhost:5000/ <br/>
 
 To run unit test <br/>
 
