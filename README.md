@@ -1,11 +1,15 @@
 # roll and play dice game
 
 
+#https://roll-and-play.herokuapp.com/
+
 to setup 
 
-1 - clone repository - https://github.com/knayamlohani/rollandplay.git  <br/>
-2 - run command -  npm install <br/>
-3 - run command - npm start <br/>
+1 - git clone https://github.com/knayamlohani/rollandplay.git <br/>
+2 - npm install<br/>
+3 - npm start<br/>
 
-4 - to run unit test run command - npm test <br/>
+To run unit test <br/>
+
+1 - npm start<br/>
  
