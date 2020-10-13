@@ -8,6 +8,7 @@ import {ADD_WON_PLAYER} from "../action/redux.action.game";
 import {RESET_DATA} from "../action/redux.action.game";
 import QueueImmutable from "../../services/service.queue";
 import {TOGGLE_VIEW_SUMMARY} from "../action/redux.action.game";
+import {UPDATE_STATE} from "../action/redux.action.game";
 
 const gameReducer = (state = {}, action) => {
 
@@ -95,7 +96,7 @@ const gameReducer = (state = {}, action) => {
 
 		case ADD_WON_PLAYER:
 			let playerId = action.payload.playerId;
-			console.log('state.game',  state);
+			console.log('state.game', state);
 			let currentRank = state.currentRank;
 			return {
 				...state,
@@ -111,6 +112,13 @@ const gameReducer = (state = {}, action) => {
 			return {
 				...state,
 				showLiveSummary: !showLiveSummary
+			};
+
+
+		case UPDATE_STATE:
+			return {
+				...state,
+				...action.payload.updates
 			};
 
 

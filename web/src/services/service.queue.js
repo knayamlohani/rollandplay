@@ -48,5 +48,10 @@ export default class QueueImmutable {
 
 	isEmpty = () => {
 		return this._elements === null || this._elements.length === 0;
+	};
+
+
+	getSize = () => {
+		return this._elements.length();
 	}
 }

@@ -11,6 +11,8 @@ export const generateDiceNo = () => {
 };
 
 
+
+// fisher yates shuffling to generate random ordering
 export const shuffle = (array)  => {
 	let currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -27,4 +29,4 @@ export const shuffle = (array)  => {
 	}
 
 	return array;
-}
+};

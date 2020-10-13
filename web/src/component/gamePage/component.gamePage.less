@@ -28,4 +28,32 @@
   }
 }
 
+.game-config-info {
+  background-color: rgba(0, 0, 0, .25);
+  padding: .25rem;
+  display: flex;
+  flex-flow: row wrap;
 
+  .info {
+    padding: 1rem;
+  }
+}
+
+.player-queue {
+  background-color: rgba(0, 0, 0, .25);
+  padding: .25rem;
+  display: flex;
+  flex-flow: row wrap;
+
+  .queue-element {
+    padding: 1rem 0 1rem 1rem;
+
+    .next-icon {
+      padding: 1rem;
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}

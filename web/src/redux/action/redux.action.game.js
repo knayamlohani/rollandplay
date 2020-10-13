@@ -16,3 +16,6 @@ export const UPDATE_RANKS = "UPDATE_RANKS";
 export const ADD_WON_PLAYER = "ADD_WON_PLAYER";
 export const RESET_DATA = "RESET_DATA";
 export const TOGGLE_VIEW_SUMMARY = "TOGGLE_VIEW_SUMMARY";
+
+
+export const UPDATE_STATE = 'UPDATE_STATE';

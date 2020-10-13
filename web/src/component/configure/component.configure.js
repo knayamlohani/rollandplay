@@ -12,6 +12,7 @@ export default class Configure extends Component {
 	}
 
 
+	// updates player count and minPoints to win in redux state
 	onChangeHandler = (e) => {
 		let field = e.target.name;
 		let value = e.target.value;
@@ -23,6 +24,7 @@ export default class Configure extends Component {
 	};
 
 
+	// on form submit call determineAndSetPlayerOrdering to set no of players, min points to win , determine initial player ordering and setup queue
 	onConfigure = (e) => {
 		console.log("on configure");
 		this.props.determineAndSetPlayerOrdering();
@@ -70,14 +72,6 @@ export default class Configure extends Component {
 
 
 					<div className={'input-group submit'}>
-						{/*<Link to={'/play'} onClick={this.onConfigure}*/}
-						      {/*disabled={this.props.game.playerCount <= 0 || this.props.game.minPointsToWin <= 0}>*/}
-							{/*<div className={'action-icon'}>*/}
-								{/*<FontAwesomeIcon icon={faArrowCircleRight}/>*/}
-							{/*</div>*/}
-						{/*</Link>*/}
-
-
 						<button onClick={this.onConfigure}
 						      disabled={this.props.game.playerCount <= 0 || this.props.game.minPointsToWin <= 0}>
 							<div className={'action-icon'}>
