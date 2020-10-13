@@ -9,9 +9,10 @@ to setup
 
 1 - git clone https://github.com/knayamlohani/rollandplay.git <br/>
 2 - git checkout master<br/>
-3 - npm install<br/>
-4 - npm start<br/>
-5 - open url -  http://localhost:5000/ <br/>
+3 - git pull origin master<br/>
+4 - npm install<br/>
+5 - npm start<br/>
+6 - open url -  http://localhost:5000/ <br/>
 
 To run unit test <br/>
 
